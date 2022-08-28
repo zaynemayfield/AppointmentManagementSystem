@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointmentController">
+    <Label fx:id="addNewAppointmentLabel" layoutX="59.0" layoutY="22.0" text="Add New Appointment">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="appointmentIdField" disable="true" editable="false" layoutX="195.0" layoutY="56.0" prefHeight="25.0" prefWidth="165.0" promptText="Appointment ID Auto Gen" />
+    <TextField fx:id="titleField" layoutX="195.0" layoutY="95.0" prefHeight="25.0" prefWidth="165.0" promptText="Title" />
+    <TextField fx:id="descriptionField" layoutX="195.0" layoutY="134.0" prefHeight="25.0" prefWidth="250.0" promptText="Description" />
+    <TextField fx:id="locationField" layoutX="195.0" layoutY="215.0" prefHeight="25.0" prefWidth="165.0" promptText="Location" />
+    <ComboBox fx:id="contactComboBox" layoutX="195.0" layoutY="256.0" prefWidth="150.0" promptText="Contact" />
+    <TextField fx:id="typeField" layoutX="196.0" layoutY="297.0" promptText="Type" />
+    <DatePicker fx:id="datePicker" layoutX="196.0" layoutY="338.0" promptText="Choose Day" />
+    <TextField fx:id="startTimeField" layoutX="196.0" layoutY="375.0" promptText="Start Time: 14:20" />
+    //Can use combo box that is time adjusted and limit customer to those hours
+    <TextField fx:id="endTimeField" layoutX="196.0" layoutY="414.0" promptText="End Time: 15:20" />
+    <ComboBox fx:id="customerComboBox" layoutX="195.0" layoutY="177.0" prefWidth="150.0" promptText="Customer" />
+    <Label fx:id="statusLabel" layoutX="196.0" layoutY="497.0" text="Status: Ready" />
+    <ComboBox fx:id="userComboBox" layoutX="195.0" layoutY="456.0" prefWidth="150.0" promptText="User" />
+</AnchorPane>

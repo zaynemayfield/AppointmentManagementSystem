@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditAppointmentController">
+    <Label fx:id="editNewAppointmentLabel" layoutX="59.0" layoutY="22.0" text="Edit Appointment">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="appointmentId" disable="true" editable="false" layoutX="195.0" layoutY="56.0" prefHeight="25.0" prefWidth="165.0" promptText="Appointment ID Auto Gen" />
+    <TextField fx:id="title" layoutX="195.0" layoutY="95.0" prefHeight="25.0" prefWidth="165.0" promptText="Title" />
+    <TextField fx:id="description" layoutX="195.0" layoutY="134.0" prefHeight="25.0" prefWidth="250.0" promptText="Description" />
+    <TextField fx:id="location" layoutX="195.0" layoutY="215.0" prefHeight="25.0" prefWidth="165.0" promptText="Location" />
+    <ComboBox fx:id="contact" layoutX="195.0" layoutY="256.0" prefWidth="150.0" promptText="Contact" />
+    <TextField fx:id="type" layoutX="196.0" layoutY="297.0" promptText="Type" />
+    <DatePicker fx:id="datePicker" layoutX="196.0" layoutY="338.0" promptText="Choose Day" />
+    <TextField fx:id="duration" layoutX="196.0" layoutY="414.0" prefHeight="25.0" prefWidth="150.0" promptText="Appt. length in Minutes" />
+    <ComboBox fx:id="customer" layoutX="195.0" layoutY="177.0" prefWidth="150.0" promptText="Customer" />
+    <Label fx:id="status" layoutX="196.0" layoutY="542.0" text="Status: Ready" />
+    <ComboBox fx:id="user" layoutX="195.0" layoutY="456.0" prefWidth="150.0" promptText="User" />
+    <Button fx:id="save" layoutX="195.0" layoutY="493.0" mnemonicParsing="false" onAction="#updateAppointment" text="Save" />
+    <Button fx:id="cancel" layoutX="385.0" layoutY="493.0" mnemonicParsing="false" onAction="#goToAppointment" text="Cancel" />
+    <ComboBox fx:id="hour" layoutX="196.0" layoutY="376.0" prefHeight="25.0" prefWidth="71.0" promptText="Hour" />
+    <Label fx:id="colon" layoutX="270.0" layoutY="372.0" text=":">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font></Label>
+    <ComboBox fx:id="minute" layoutX="278.0" layoutY="376.0" prefHeight="25.0" prefWidth="83.0" promptText="Minute" />
+</AnchorPane>

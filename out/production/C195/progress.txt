@@ -1,0 +1,6 @@
+7/15/2022 GOt most all UI setup, went through 3 videos of the overview and made comments, setup project appropriately
+7/16/2022 Need to understand the DAO model as I have not used it before
+7/17/2022 had to rework the whole setup of the project... but I got the login working, the user login records writing to a txt, have the language portion of it done,
+the location in time zone done by not translated?
+7/18/2022 I got the customers Working completely, got the timezone thing figured out, got the appointments figured out except implement the modify appointments page.
+7/19/2022 Finished up everything except reports, finished reports, finished everything except javadocs and lambda expressions got javadocs and lambda done, generated javadocs and exporting project

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+    <children>
+        <Label fx:id="title" layoutX="34.0" layoutY="44.0" text="Report View">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+
+
+        <TableView fx:id="contactTable" layoutX="5.0" layoutY="213.0" prefHeight="254.0" prefWidth="790.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="37.0" text="ID" />
+                <TableColumn fx:id="titleCol" prefWidth="126.0" text="Title" />
+                <TableColumn fx:id="typeCol" prefWidth="128.0" text="Type" />
+                <TableColumn fx:id="descriptionCol" prefWidth="177.0" text="Description" />
+                <TableColumn fx:id="startCol" prefWidth="123.0" text="Start" />
+                <TableColumn fx:id="endCol" prefWidth="123.0" text="End" />
+                <TableColumn fx:id="customerIdCol" minWidth="0.0" prefWidth="75.0" text="Customer ID" />
+            </columns>
+        </TableView>
+        <Button fx:id="reports" layoutX="629.0" layoutY="552.0" mnemonicParsing="false" onAction="#gotToAppointment" text="Back to Appointments" />
+      <ComboBox fx:id="month" layoutX="20.0" layoutY="80.0" onAction="#handleMonth" prefWidth="150.0" promptText="Month" />
+      <ComboBox fx:id="type" layoutX="193.0" layoutY="80.0" onAction="#handleType" prefWidth="150.0" promptText="Type" />
+      <Label fx:id="numApptLabel" layoutX="364.0" layoutY="84.0" text="Number of Appointments by Type:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="658.0" layoutX="118.0" layoutY="164.0" startX="-100.0" />
+      <ComboBox fx:id="contactName" layoutX="20.0" layoutY="178.0" onAction="#handleContact" prefWidth="150.0" promptText="Contact Name" />
+      <Label layoutX="374.0" layoutY="181.0" text="View Appointments by Contact">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="659.0" layoutX="119.0" layoutY="504.0" startX="-100.0" />
+      <Label layoutX="34.0" layoutY="524.0" text="Total Customers in System:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="numCustomers" layoutX="207.0" layoutY="524.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusAppt" layoutX="20.0" layoutY="126.0" text="Status: Ready" />
+      <Label fx:id="statusContact" layoutX="20.0" layoutY="469.0" text="Status: Ready" />
+      <Label fx:id="numAppt" layoutX="586.0" layoutY="84.0" text="0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

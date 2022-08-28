@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppointmentController">
+    <children>
+        <Label fx:id="title" layoutX="34.0" layoutY="37.0" text="Appointment View">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+
+        <RadioButton fx:id="monthViewRadio" layoutX="314.0" layoutY="75.0" mnemonicParsing="false" onAction="#monthView" text="Month View">
+            <toggleGroup>
+                <ToggleGroup fx:id="appView" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="weekViewRadio" layoutX="424.0" layoutY="75.0" mnemonicParsing="false" onAction="#weekView" text="Week View" toggleGroup="$appView" />
+        <RadioButton fx:id="allViewRadio" layoutX="215.0" layoutY="75.0" mnemonicParsing="false" onAction="#allView" selected="true" text="All View" toggleGroup="$appView" />
+
+        <TableView fx:id="appointmentTable" layoutX="5.0" layoutY="100.0" prefHeight="305.0" prefWidth="890.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="29.0" text="ID" />
+                <TableColumn fx:id="titleCol" prefWidth="77.0" text="Title" />
+                <TableColumn fx:id="descriptionCol" prefWidth="118.0" text="Description" />
+                <TableColumn fx:id="locationCol" prefWidth="94.0" text="Location" />
+                <TableColumn fx:id="contactCol" prefWidth="108.0" text="Contact" />
+                <TableColumn fx:id="typeCol" prefWidth="111.0" text="Type" />
+                <TableColumn fx:id="startCol" prefWidth="99.0" text="Start" />
+                <TableColumn fx:id="endCol" prefWidth="114.0" text="End" />
+                <TableColumn fx:id="customerIdCol" minWidth="0.0" prefWidth="76.0" text="Customer ID" />
+                <TableColumn fx:id="userIdCol" prefWidth="63.0" text="User ID" />
+            </columns>
+        </TableView>
+        <Button fx:id="newAppointment" layoutX="34.0" layoutY="423.0" mnemonicParsing="false" onAction="#newAppointment" text="New Appointment" />
+        <Button fx:id="editAppointment" layoutX="172.0" layoutY="423.0" mnemonicParsing="false" onAction="#editAppointment" text="Edit Appointment" />
+        <Button fx:id="deleteAppointment" layoutX="314.0" layoutY="423.0" mnemonicParsing="false" onAction="#deleteAppointment" text="Delete Appointment" />
+        <Button fx:id="viewCustomersButton" layoutX="475.0" layoutY="423.0" mnemonicParsing="false" onAction="#customers" text="View Customers" />
+        <Button fx:id="reports" layoutX="605.0" layoutY="423.0" mnemonicParsing="false" onAction="#gotToReports" text="View Reports" />
+        <Button fx:id="logout" layoutX="720.0" layoutY="423.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+        <Label fx:id="status" layoutX="34.0" layoutY="463.0" text="Status: Ready" />
+        <Label fx:id="notice" layoutX="600.0" layoutY="463.0" text="All times are displayed in your timezone" />
+    </children>
+</AnchorPane>
