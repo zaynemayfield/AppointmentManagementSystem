@@ -19,4 +19,4 @@ Launch the application and use the following credentials to log-in:
     password: test
 The program is design to be intuitive and clear on how to create, edit, delete both customers and appointments.
 
-![Screenshot](https://github.com/zaynemayfield/ScrumSystemForTeams/blob/master/img/screenshot.jpg)
+![Screenshot](https://github.com/zaynemayfield/AppointmentManagementSystem/blob/master/screenshot.jpg)
